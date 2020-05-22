@@ -1,0 +1,19 @@
+body {
+    background-color: #abd1c6;
+    font-family: 'Oswald', sans-serif;
+    color: #0f3433;
+}
+
+h5 {
+    font-size: 1.5em
+}
+
+nav.navbar {
+    background-color: #004643;
+    color: #f9bc60;
+}
+
+button.btn-primary {
+    background-color: #004643;
+    color: #e16162;
+}
