@@ -13,6 +13,10 @@ nav.navbar {
     color: #f9bc60;
 }
 
+nav.navbar li a{
+    color: #f9bc60 !important
+}
+
 button.btn-primary {
     background-color: #004643;
     color: #e16162;
