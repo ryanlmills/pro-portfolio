@@ -97,7 +97,7 @@
     <div class="container-fluid px-lg-5" id="contact-form">
         <div class="row mx-md-5 py-5">
             <div class="col-lg-3">
-                <form action="http://localhost:4200/apis" novalidate id="contact">
+                <form action="./apis" novalidate id="contact">
                     <div class="form-group">
                         <h5>Contact</h5>
                         <input type="text" class="form-control" id="FormInput1" placeholder="Name">
@@ -108,8 +108,7 @@
                     <div class="form-group">
                         <textarea class="form-control" id="FormInput3" rows="5" placeholder="Message"></textarea>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="FormInput4" placeholder="Captcha Placeholder">
+                    <div class="g-recaptcha" data-sitekey="#">
                     </div>
                     <div class="send-reset">
                         <button class="btn btn-primary" type="submit">Send</button>
