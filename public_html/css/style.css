@@ -21,3 +21,7 @@ button.btn-primary {
     background-color: #004643;
     color: #e16162;
 }
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
