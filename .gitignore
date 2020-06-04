@@ -1,5 +1,5 @@
 .DS_Store
 /.idea
 /vendor
-*/node_modules
+/src/node_modules
 /src/mailgun.env
