@@ -12,16 +12,20 @@ h5 {
 
 nav.navbar {
     background-color: #004643;
-    color: #f9bc60;
+    color: #f9bc60; !important
 }
 
 nav.navbar li a{
     color: #f9bc60 !important
 }
 
+navbar-brand {
+    color: #f9bc60;
+}
+
 button.btn-primary {
     background-color: #004643;
-    color: #e16162;
+    color: #ffffff;
 }
 
 .fab {
@@ -30,4 +34,8 @@ button.btn-primary {
 
 .carousel-inner > .item > img {
     margin: 0 auto;
+}
+
+a {
+    color: #ffffff;
 }
