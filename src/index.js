@@ -2,7 +2,7 @@ const express = require('express')
 const morgan = require('morgan')
 const mailgun = require('mailgun-js')
 const bodyParser = require('body-parser')
-const {check, validationResult} = require("express-validator")
+const {check, validationResult} = require('express-validator')
 const Recaptcha = require('express-recaptcha').RecaptchaV2
 
 // initializing the express application
@@ -24,11 +24,11 @@ const requestValidation = [
 ]
 
 indexRoute.route('/apis')
-  .get((request, response) => {
+  .get((request,response) => {
     return response.json("Is this thing on?")
   }).post(recaptcha.middleware.verify, requestValidation, (request, response) => {
-
   response.append('Content-Type', 'text/html')
+
 
   if (request.recaptcha.error) {
     return response.send(`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong>There was an error with Recaptcha</div>`)
@@ -49,7 +49,7 @@ indexRoute.route('/apis')
     to: process.env.MAIL_RECIPIENT,
     from: `Mailgun Sandbox <postmaster@${domain}>`,
     subject: `${name} - ${email}: ${subject}`,
-    text: message
+    text: `${message}`
   }
 
   mg.messages().send(mailgunData, (error) => {
