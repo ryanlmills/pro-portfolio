@@ -2,7 +2,7 @@ body {
     background-color: #abd1c6;
     font-family: 'Oswald', sans-serif;
     color: #0f3433;
-    font-size:16px;
+    font-size:20px;
 }
 
 h5 {
@@ -32,10 +32,16 @@ button.btn-primary {
     font-size: 48px;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
 .carousel-inner > .item > img {
     margin: 0 auto;
 }
 
 a {
-    color: #ffffff;
+    color: #e16162;
 }
