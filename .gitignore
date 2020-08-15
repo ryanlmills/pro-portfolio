@@ -2,3 +2,5 @@
 /.idea
 *node_modules
 /src/mailgun.env
+./public_html/stars
+./public_html/thirty-game

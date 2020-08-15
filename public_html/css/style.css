@@ -12,14 +12,17 @@ h5 {
 
 nav.navbar {
     background-color: #004643;
-    color: #f9bc60; !important
 }
 
 nav.navbar li a{
-    color: #f9bc60 !important
+    color: #f9bc60;
 }
 
 navbar-brand {
+    color: #f9bc60;
+}
+
+.up-top {
     color: #f9bc60;
 }
 
