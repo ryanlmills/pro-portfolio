@@ -3,4 +3,6 @@
 *node_modules
 /src/mailgun.env
 ./public_html/stars
+*stars
+*thirty-game
 ./public_html/thirty-game
