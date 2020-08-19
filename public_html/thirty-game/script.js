@@ -37,7 +37,7 @@ function checkWin () {
   }
 }
 
-// Need to implement currentGame if condition
+// This seems wildly inefficient
 // Add to score
 document.querySelector('.add0-1').addEventListener('click', function () {
   if (currentGame) {
