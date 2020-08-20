@@ -46,7 +46,7 @@ function checkWin () {
   }
 }
 
-// This seems wildly inefficient
+// Is there a better way to call btnClick in this?
 // Add to score
 document.querySelector('.add0-1').addEventListener('click', function () {
   btnClick(1)
