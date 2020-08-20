@@ -24,6 +24,15 @@ function nextPlayer () {
   document.querySelector('.player-1-panel').classList.toggle('active')
 }
 
+const btnClick = addition => {
+  if (currentGame) {
+    score += addition
+    checkWin()
+    console.log(`+${addition}`)
+    document.querySelector('.score').textContent = score
+  }
+}
+
 // Check for win condition
 function checkWin () {
   if (score >= 30) {
@@ -40,57 +49,27 @@ function checkWin () {
 // This seems wildly inefficient
 // Add to score
 document.querySelector('.add0-1').addEventListener('click', function () {
-  if (currentGame) {
-    score += 1
-    checkWin()
-    console.log('+1')
-    document.querySelector('.score').textContent = score
-  }
+  btnClick(1)
 })
 
 document.querySelector('.add0-2').addEventListener('click', function () {
-  if (currentGame) {
-    score += 2
-    checkWin()
-    console.log('+2')
-    document.querySelector('.score').textContent = score
-  }
+  btnClick(2)
 })
 
 document.querySelector('.add0-3').addEventListener('click', function () {
-  if (currentGame) {
-    score += 3
-    checkWin()
-    console.log('+3')
-    document.querySelector('.score').textContent = score
-  }
+  btnClick(3)
 })
 
 document.querySelector('.add1-1').addEventListener('click', function () {
-  if (currentGame) {
-    score += 1
-    checkWin()
-    console.log('+1')
-    document.querySelector('.score').textContent = score
-  }
+  btnClick(1)
 })
 
 document.querySelector('.add1-2').addEventListener('click', function () {
-  if (currentGame) {
-    score += 2
-    checkWin()
-    console.log('+2')
-    document.querySelector('.score').textContent = score
-  }
+  btnClick(2)
 })
 
 document.querySelector('.add1-3').addEventListener('click', function () {
-  if (currentGame) {
-    score += 3
-    checkWin()
-    console.log('+3')
-    document.querySelector('.score').textContent = score
-  }
+  btnClick(3)
 })
 
 // New game button
