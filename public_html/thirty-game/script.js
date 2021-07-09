@@ -13,6 +13,10 @@ init()
 function init () {
   score = 0
   document.querySelector('.score').textContent = score
+  if (activePlayer === 1) {
+    document.querySelector('.player-0-panel').classList.toggle('active')
+    document.querySelector('.player-1-panel').classList.toggle('active')
+  }
   activePlayer = 0
   currentGame = true
 }
@@ -28,7 +32,6 @@ const btnClick = addition => {
   if (currentGame) {
     score += addition
     checkWin()
-    console.log(`+${addition}`)
     document.querySelector('.score').textContent = score
   }
 }
